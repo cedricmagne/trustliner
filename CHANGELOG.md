@@ -19,3 +19,11 @@ once packages are published.
   unfunded recipient is onboarded to hold an asset with zero XLM and no pre-trustline.
 - Freighter test harness in `apps/welcome` (Vite): connect Freighter on testnet and
   onboard your own wallet end-to-end, with the recipient signature done in the wallet.
+- Idempotency + stable per-session issuer in the welcome demo (no duplicate trustlines on
+  repeat onboarding).
+- Vercel preview support: app build compiles the workspace SDK first; root `vercel.json`.
+- **M1 — standard specification complete** (`standard/sep-draft.md` v0.2): discovery via
+  `stellar.toml`, `GET /info`, `POST /transactions` + status polling, JSON message
+  schemas, on-chain settlement (claimable-balance claim predicates, reclaim window, fee
+  responsibility, `funded` vs `sponsored` account-creation strategies), and error codes.
+  Remaining: open the public RFC.

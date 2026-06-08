@@ -7,4 +7,9 @@ onboarding handshake, plus its rationale and security analysis.
 - [`rationale.md`](./rationale.md) — design alternatives and trade-offs
 - [`security.md`](./security.md) — security considerations
 
-Status: **Draft v0.1 (foundation).** Sections marked _TBD_ are filled during milestone M1.
+Status: **Draft v0.2 — M1 specification complete.** Discovery, capabilities, handshake
+messages, on-chain settlement (claim predicates, reclaim, fees, account-creation
+strategies), and error codes are all specified, grounded in the testnet-proven flow.
+
+Remaining M1 item (applicant action): open the public RFC and record the link in the SEP
+preamble `Discussion` field.

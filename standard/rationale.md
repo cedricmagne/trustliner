@@ -56,9 +56,18 @@ operational complexity for no benefit once sponsorship + claimable balances are 
 | Protocol change required | no | no | no | **no** |
 | Interoperable standard | yes | partial | partial | **yes** |
 
-## Open questions (resolved during M1)
+## Open questions — resolved in M1
 
-- Exact discovery mechanism (`stellar.toml` fields).
-- Claim predicates and authorization expiry.
-- Fee responsibility between sender and recipient.
-- Optional issuer authorization flags (authorized/clawback) interaction.
+All resolved in [`sep-draft.md`](./sep-draft.md) v0.2:
+
+- **Discovery** → `TRUSTLINE_ONBOARDER_SERVER` in `stellar.toml` (SEP-1) + `GET /info`.
+- **Claim predicates / expiry** → recipient claimant `BEFORE_RELATIVE_TIME(window)`,
+  sponsor claimant `NOT BEFORE_RELATIVE_TIME(window)` → recipient claims in-window, sender
+  reclaims after.
+- **Fee responsibility** → sender pays sender-side ops; recipient claim is fee-bumped by
+  the sponsor under `sponsored`, or paid from the funded balance under `funded`.
+- **Issuer flags** → `AUTHORIZATION_REQUIRED` handled by issuer coordination or
+  `asset_not_supported`; clawback surfaced in `GET /info`.
+
+One late addition from the testnet/Freighter work: two **account-creation strategies**
+(`funded` vs `sponsored`), because wallets refuse to sign from non-existent accounts.
