@@ -128,4 +128,58 @@ export function buildSponsoredClaimTx(params: BuildSponsoredClaimParams): Transa
     .build();
 }
 
+export interface BuildCreateAccountParams {
+  /** Loaded funder account (the sponsor). Pays the starting balance + fee, signs. */
+  sponsorAccount: Account;
+  recipient: StellarAddress;
+  /** XLM to seed the new account with (must be >= the 1 XLM base reserve). */
+  startingBalance: string;
+  networkPassphrase: string;
+  baseFee?: string;
+}
+
+/**
+ * Create and fund a recipient account, paid for entirely by the sponsor. Use this when
+ * the recipient signs in a wallet (e.g. Freighter) that refuses to sign from an account
+ * that does not yet exist on-chain. The recipient pays nothing.
+ */
+export function buildCreateAccountTx(params: BuildCreateAccountParams): Transaction {
+  const { sponsorAccount, recipient, startingBalance, networkPassphrase } = params;
+  return new TransactionBuilder(sponsorAccount, {
+    fee: params.baseFee ?? BASE_FEE,
+    networkPassphrase,
+  })
+    .addOperation(
+      Operation.createAccount({ destination: recipient, startingBalance }),
+    )
+    .setTimeout(DEFAULT_TIMEOUT)
+    .build();
+}
+
+export interface BuildClaimParams {
+  /** Loaded recipient account (must already exist). Tx source; signs (e.g. Freighter). */
+  recipientAccount: Account;
+  asset: Asset;
+  balanceId: string;
+  networkPassphrase: string;
+  baseFee?: string;
+}
+
+/**
+ * Add the asset trustline and claim the escrowed balance, signed solely by the
+ * recipient. Used by the wallet flow once the recipient account exists and holds enough
+ * XLM to cover the trustline reserve and fee.
+ */
+export function buildClaimTx(params: BuildClaimParams): Transaction {
+  const { recipientAccount, asset, balanceId, networkPassphrase } = params;
+  return new TransactionBuilder(recipientAccount, {
+    fee: params.baseFee ?? BASE_FEE,
+    networkPassphrase,
+  })
+    .addOperation(Operation.changeTrust({ asset: toStellarAsset(asset) }))
+    .addOperation(Operation.claimClaimableBalance({ balanceId }))
+    .setTimeout(DEFAULT_TIMEOUT)
+    .build();
+}
+
 export const VERSION = "0.0.0";

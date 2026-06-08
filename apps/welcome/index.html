@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Stellar — Trustline Onboarder</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <h1>Welcome to Stellar</h1>
+        <p class="sub">
+          Receive a Stellar asset with <strong>nothing to pay</strong> and
+          <strong>no trustline setup</strong> — the sender funds your account, straight
+          into your Freighter wallet.
+        </p>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <span class="label">Network</span>
+          <span class="value">Testnet</span>
+        </div>
+        <div class="row">
+          <span class="label">Asset</span>
+          <span class="value">ONBOARD (demo)</span>
+        </div>
+        <div class="row">
+          <span class="label">Your address</span>
+          <span class="value" id="address">—</span>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="connect" type="button">Connect Freighter</button>
+        <button id="onboard" type="button" disabled>Onboard my wallet</button>
+      </div>
+
+      <pre id="log" class="log" aria-live="polite"></pre>
+
+      <footer>
+        <a id="explorer" href="#" target="_blank" rel="noopener" hidden>
+          View on stellar.expert →
+        </a>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

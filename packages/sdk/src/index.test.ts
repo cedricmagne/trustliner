@@ -1,6 +1,8 @@
 import { Account, Keypair, Networks } from "@stellar/stellar-sdk";
 import { describe, expect, it } from "vitest";
 import {
+  buildClaimTx,
+  buildCreateAccountTx,
   buildCreateClaimableBalanceTx,
   buildSponsoredClaimTx,
   VERSION,
@@ -53,6 +55,32 @@ describe("@trustline-onboarder/sdk", () => {
     expect(tx.source).toBe(sender.publicKey());
     expect(tx.operations[2]?.source).toBe(recipient.publicKey());
     expect(tx.operations[4]?.source).toBe(recipient.publicKey());
+  });
+
+  it("builds a sponsor-funded create-account tx (wallet flow)", () => {
+    const tx = buildCreateAccountTx({
+      sponsorAccount: freshAccount(sender.publicKey()),
+      recipient: recipient.publicKey(),
+      startingBalance: "2",
+      networkPassphrase: Networks.TESTNET,
+    });
+    expect(tx.operations).toHaveLength(1);
+    expect(tx.operations[0]?.type).toBe("createAccount");
+    expect(tx.source).toBe(sender.publicKey());
+  });
+
+  it("builds a recipient-signed trustline + claim tx (wallet flow)", () => {
+    const tx = buildClaimTx({
+      recipientAccount: freshAccount(recipient.publicKey()),
+      asset,
+      balanceId: "00000000".repeat(9),
+      networkPassphrase: Networks.TESTNET,
+    });
+    expect(tx.operations.map((o) => o.type)).toEqual([
+      "changeTrust",
+      "claimClaimableBalance",
+    ]);
+    expect(tx.source).toBe(recipient.publicKey());
   });
 
   it("omits createAccount when the recipient account already exists", () => {

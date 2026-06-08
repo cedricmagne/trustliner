@@ -17,3 +17,5 @@ once packages are published.
   SDK transaction builders (`buildCreateClaimableBalanceTx`, `buildSponsoredClaimTx`)
   and reference orchestration (`runSenderFlow`, `runRecipientFlow`, `runDemo`). An
   unfunded recipient is onboarded to hold an asset with zero XLM and no pre-trustline.
+- Freighter test harness in `apps/welcome` (Vite): connect Freighter on testnet and
+  onboard your own wallet end-to-end, with the recipient signature done in the wallet.
