@@ -1,0 +1,13 @@
+{
+  "name": "@trustline-onboarder/welcome",
+  "version": "0.0.0",
+  "private": true,
+  "description": "\"Welcome to Stellar\" onboarding landing page (Next.js). Scaffolded in milestone M4.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "echo \"welcome app scaffolded in M4\" && exit 0",
+    "test": "echo \"no tests yet (M4)\" && exit 0",
+    "typecheck": "echo \"no typecheck yet (M4)\" && exit 0",
+    "clean": "rm -rf .next out"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "trustline-onboarder",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A Stellar standard and reference implementation that lets exchanges and wallets onboard users to Stellar assets without manual trustline setup.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "pnpm@11.4.0+sha512.f0febc7e37552ab485494a914241b338e0b3580b93d54ce31f00933015880863129038a1b4ae4e414a0ee63ac35bf21197e990172c4a68256450b5636310968f",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": [
+    "stellar",
+    "trustline",
+    "onboarding",
+    "sep",
+    "cap",
+    "soroban",
+    "claimable-balance",
+    "sponsored-reserves"
+  ]
+}
