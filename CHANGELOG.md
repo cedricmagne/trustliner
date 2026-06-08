@@ -13,3 +13,7 @@ once packages are published.
 - Standard skeleton: SEP draft, design rationale, security considerations.
 - SDK and reference-implementation package skeletons.
 - "Welcome to Stellar" landing-page placeholder.
+- **M2 — sender + sponsored-recipient flows** implemented and verified on testnet:
+  SDK transaction builders (`buildCreateClaimableBalanceTx`, `buildSponsoredClaimTx`)
+  and reference orchestration (`runSenderFlow`, `runRecipientFlow`, `runDemo`). An
+  unfunded recipient is onboarded to hold an asset with zero XLM and no pre-trustline.

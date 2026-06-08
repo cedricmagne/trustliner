@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "demo": "pnpm build && node dist/demo.js",
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "clean": "rm -rf dist *.tsbuildinfo"
@@ -16,6 +17,7 @@
     "@trustline-onboarder/sdk": "workspace:*"
   },
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
   }

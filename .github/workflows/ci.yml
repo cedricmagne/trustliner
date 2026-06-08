@@ -20,8 +20,9 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm typecheck
-
+      # build first: workspace dependents typecheck against built package types
       - run: pnpm build
+
+      - run: pnpm typecheck
 
       - run: pnpm test
