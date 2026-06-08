@@ -40,6 +40,19 @@ A fresh Freighter testnet account is the ideal recipient.
 - See [the standard](../../standard/sep-draft.md) and
   [architecture](../../proposal/architecture.md).
 
+## Deploy (Vercel preview)
+
+The SDK is a workspace package (not published to npm), so it must be built before the
+app. The app's `build` script does this (`pnpm --filter @trustline-onboarder/sdk build
+&& vite build`), and the repo-root `vercel.json` configures a root-directory project.
+
+- **Root Directory = repo root** (recommended): `vercel.json` handles build + output
+  (`apps/welcome/dist`).
+- **Root Directory = `apps/welcome`**: the self-contained `build` script handles it;
+  output `dist` is auto-detected.
+
+No environment variables required.
+
 ## Notes
 
 - Build tooling: Vite. `@stellar/stellar-sdk`'s browser bundle needs `unenv/*`
