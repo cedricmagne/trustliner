@@ -1,6 +1,6 @@
 # Architecture
 
-High-level technical architecture for Trustline Onboarder, as required by the RFP
+High-level technical architecture for Trustliner, as required by the RFP
 (Mermaid diagram + plain-English explanation).
 
 ## Goal
@@ -26,7 +26,7 @@ sequenceDiagram
     autonumber
     participant R as Recipient (new user)
     participant W as Wallet / Exchange UI
-    participant SDK as Trustline Onboarder SDK
+    participant SDK as Trustliner SDK
     participant S as Sender (issuer/exchange backend)
     participant N as Stellar network
 

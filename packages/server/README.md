@@ -1,7 +1,7 @@
 # @trustliner/server
 
 SEP-conformant onboarding server (the **sender** side). Implements the
-[Trustline Onboarder standard](../../standard/sep-draft.md): discovery capabilities,
+[Trustliner standard](../../standard/sep-draft.md): discovery capabilities,
 onboarding requests, claim-transaction issuance, submission, and status.
 
 > ✅ **M3.** HTTP API + `funded` and `sponsored` flows. Built on [Hono](https://hono.dev),

@@ -29,12 +29,12 @@ flowchart TB
     Dev[Wallet / Exchange integrator] -->|imports| SDK[(npm: @trustliner/sdk)]
     SDK -->|submits txns| Horizon[Stellar Horizon / RPC]
     Horizon --> Net[(Stellar network)]
-    User[New user] -->|optional| Page[Welcome to Stellar page<br/>static / edge, no keys]
+    User[New user] -->|optional| Page["trustliner.xyz<br/>static / edge, no keys"]
     Page -->|uses| SDK
 ```
 
 ## Operational footprint
 
 - No always-on backend is required for the core protocol.
-- The landing page can run on any static/edge host.
+- Landing page deployed at **[trustliner.xyz](https://trustliner.xyz)** (static/edge, Vercel).
 - CI runs on GitHub Actions.

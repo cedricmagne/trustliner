@@ -2,7 +2,7 @@
 
 > 🚧 Drafted in milestone **M4**.
 
-How an exchange adopts Trustline Onboarder to withdraw non-native assets to users who
+How an exchange adopts Trustliner to withdraw non-native assets to users who
 have not set up a trustline.
 
 Outline:

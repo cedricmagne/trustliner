@@ -10,11 +10,11 @@ LinkedIn: [linkedin.com/in/cedricmagne](https://linkedin.com/in/cedricmagne)
 
 ## Why this team fits this RFP
 
-Cédric's years at Consensys — engineering on protocols underpinning MetaMask and Infura — gave him direct, production-scale experience with the same class of problems Trustline Onboarder solves: onboarding friction, reserve management, and SDK design for developer ecosystems. DeFi protocol work at that level requires exactly the primitives this SEP composes: escrow mechanics, sponsored accounts, and interoperability standards. His CTO background means the project ships with architecture discipline and maintenance habits from day one, not retrofitted after launch.
+Cédric's years at Consensys — engineering on protocols underpinning MetaMask and Infura — gave him direct, production-scale experience with the same class of problems Trustliner solves: onboarding friction, reserve management, and SDK design for developer ecosystems. DeFi protocol work at that level requires exactly the primitives this SEP composes: escrow mechanics, sponsored accounts, and interoperability standards. His CTO background means the project ships with architecture discipline and maintenance habits from day one, not retrofitted after launch.
 
 ## Prior dev-focused work
 
-- **Trustline Onboarder** — this project; open-source under Apache-2.0: [github.com/cedricmagne/trustline-onboarder](https://github.com/cedricmagne/trustline-onboarder)
+- **Trustliner** — this project; open-source under Apache-2.0: [github.com/cedricmagne/trustliner](https://github.com/cedricmagne/trustliner)
 - **Consensys / MetaMask ecosystem** — contributor during tenure at Consensys, one of the primary Ethereum infrastructure companies; work covered smart contract tooling, DeFi protocol integrations, and developer-facing SDKs
 
 ## Stellar-specific experience

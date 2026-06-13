@@ -2,7 +2,7 @@
   "name": "@trustliner/server",
   "version": "0.0.0",
   "private": true,
-  "description": "SEP-conformant Trustline Onboarder server (sender side): discovery, onboarding requests, claim, status.",
+  "description": "SEP-conformant Trustliner server (sender side): discovery, onboarding requests, claim, status.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",

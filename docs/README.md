@@ -1,6 +1,6 @@
 # Documentation
 
-Integration guides and architecture documentation for Trustline Onboarder.
+Integration guides and architecture documentation for Trustliner.
 
 - [Architecture](../proposal/architecture.md) — flow diagrams and walkthrough
 - [The standard (SEP draft)](../standard/sep-draft.md)

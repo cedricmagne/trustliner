@@ -6,7 +6,7 @@ import { runDemo } from "./index.js";
 
 const amount = process.argv[2] ?? "10";
 
-console.log("Trustline Onboarder — testnet demo");
+console.log("Trustliner — testnet demo");
 console.log("Onboarding an unfunded recipient (zero XLM, no trustline)...\n");
 
 runDemo(amount)

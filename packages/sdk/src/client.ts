@@ -1,5 +1,5 @@
 /**
- * SEP-conformant client for the Trustline Onboarder protocol. Used by wallet/recipient
+ * SEP-conformant client for the Trustliner protocol. Used by wallet/recipient
  * tooling to discover a sender, read its capabilities, request onboarding, and track it.
  *
  * @see ../../standard/sep-draft.md

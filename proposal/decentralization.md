@@ -5,11 +5,11 @@ applicable).
 
 ## No new trusted intermediary
 
-Trustline Onboarder introduces **no new custodian and no new trusted third party**.
+Trustliner introduces **no new custodian and no new trusted third party**.
 Onboarding is performed using native Stellar primitives — sponsored reserves (CAP-33)
 and claimable balances — executed by the **sender the user already transacts with**
 (their exchange or wallet). At no point is custody of the recipient's funds transferred
-to a Trustline Onboarder-operated service.
+to a Trustliner-operated service.
 
 ## Open and self-hostable
 
@@ -25,7 +25,7 @@ to a Trustline Onboarder-operated service.
 | Sender (exchange/wallet) | Already trusted by the user; pays reserves; cannot seize claimed funds |
 | Recipient | Holds their own keys; claims their own balance |
 | Sponsor | Reserves are recoverable only by the sponsor if onboarding is abandoned |
-| Trustline Onboarder | No keys, no custody, no privileged role |
+| Trustliner | No keys, no custody, no privileged role |
 
 ## Centralized components
 

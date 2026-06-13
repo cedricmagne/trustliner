@@ -1,6 +1,6 @@
 # Maintenance plan
 
-Post-launch sustainability strategy for Trustline Onboarder.
+Post-launch sustainability strategy for Trustliner.
 
 ## Standard
 
@@ -24,7 +24,8 @@ Post-launch sustainability strategy for Trustline Onboarder.
 ## Sustainability
 
 - Low fixed running cost by design: the standard and SDK are static artifacts; the
-  reference flow runs against public Horizon/RPC with no bespoke backend.
+  reference flow runs against public Horizon/RPC with no bespoke backend; the landing
+  page at **[trustliner.xyz](https://trustliner.xyz)** is static/edge-hosted.
 - Ongoing maintenance funded through a combination of: integrator support engagements,
   follow-on ecosystem grants where scope expands, and community contribution (the repo
   is built in the open under Apache-2.0).

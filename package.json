@@ -1,5 +1,5 @@
 {
-  "name": "trustline-onboarder",
+  "name": "trustliner",
   "version": "0.0.0",
   "private": true,
   "description": "A Stellar standard and reference implementation that lets exchanges and wallets onboard users to Stellar assets without manual trustline setup.",

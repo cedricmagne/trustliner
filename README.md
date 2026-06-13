@@ -1,14 +1,14 @@
-# Trustline Onboarder
+# Trustliner
 
 > Onboard users to Stellar assets **without manual trustline setup.**
 
-Trustline Onboarder is a Stellar standard, reference implementation, and SDK that
+Trustliner is a Stellar standard, reference implementation, and SDK that
 lets exchanges and wallets deliver non-native assets (USDC, EURC, etc.) to brand-new
 users who hold no XLM and have never created a trustline. It removes the single
 biggest source of friction in Stellar asset onboarding.
 
 Built as a submission to the **Stellar Community Fund — Build Award, RFP Track**
-([Trustline Onboarder RFP](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/rfp-track)).
+([Trustliner RFP](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/rfp-track)).
 
 ---
 
@@ -25,7 +25,7 @@ manually configured a trustline they don't understand. Most onboarding flows die
 
 ## The approach
 
-Trustline Onboarder defines an **open standard** (SEP draft) plus tooling that lets a
+Trustliner defines an **open standard** (SEP draft) plus tooling that lets a
 sender (exchange/wallet) deliver an asset to a recipient who has done *nothing* in
 advance. The standard composes three existing Stellar primitives so no protocol change
 is required to ship v1:

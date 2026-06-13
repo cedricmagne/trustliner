@@ -1,12 +1,12 @@
 # SCF Build Award — RFP Track Proposal
 
-## Project: Trustline Onboarder
+## Project: Trustliner
 
 > A standard enabling exchanges and wallets to onboard users to Stellar assets
 > without manual trustline setup, with a reference implementation, SDKs, and a
 > "Welcome to Stellar" landing page.
 
-**RFP:** [Trustline Onboarder](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/rfp-track)
+**RFP:** [Trustliner](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/rfp-track)
 **Track:** Build Award — RFP Track
 **Target completion:** Q2 2026
 **License:** Apache-2.0 (open-source, built in the open)
@@ -17,7 +17,7 @@
 
 Receiving a non-native Stellar asset (USDC, EURC, an anchor's token) requires a
 funded account *and* a pre-established trustline. New users from exchanges and
-fresh wallets have neither. Trustline Onboarder defines an **open standard** plus
+fresh wallets have neither. Trustliner defines an **open standard** plus
 production tooling so a sender can deliver an asset to a recipient who has done
 nothing in advance — no XLM, no trustline, no manual setup.
 
@@ -69,7 +69,7 @@ flowchart LR
         S2[Sponsor reserves]
         S3[Create claimable balance]
     end
-    subgraph Std["Trustline Onboarder Standard"]
+    subgraph Std["Trustliner Standard"]
         H[Onboarding handshake<br/>SEP]
         SDK[TypeScript SDK]
     end

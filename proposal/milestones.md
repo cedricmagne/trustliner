@@ -1,6 +1,6 @@
 # Milestones
 
-Clear, testable delivery milestones for Trustline Onboarder. Each milestone has an
+Clear, testable delivery milestones for Trustliner. Each milestone has an
 outcome, acceptance criteria, and the deliverables it unlocks. Tranche mapping is a
 proposal; final tranche structure is agreed with SCF reviewers.
 

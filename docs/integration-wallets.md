@@ -2,7 +2,7 @@
 
 > 🚧 Drafted in milestone **M4**.
 
-How a wallet adopts Trustline Onboarder to let users receive non-native assets without
+How a wallet adopts Trustliner to let users receive non-native assets without
 holding XLM or pre-configuring a trustline.
 
 Outline:

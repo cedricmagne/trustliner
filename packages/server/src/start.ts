@@ -13,4 +13,4 @@ const app = createApp(service);
 const port = Number(process.env.PORT ?? 8787);
 
 serve({ fetch: app.fetch, port });
-console.log(`Trustline Onboarder server listening on :${port}`);
+console.log(`Trustliner server listening on :${port}`);

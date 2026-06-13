@@ -1,4 +1,4 @@
-# Trustline Onboarder — Standard
+# Trustliner — Standard
 
 This directory holds the published standard: a draft SEP defining the trustline-free
 onboarding handshake, plus its rationale and security analysis.

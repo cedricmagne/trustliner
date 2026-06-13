@@ -16,7 +16,7 @@ importers:
       '@stellar/stellar-sdk':
         specifier: ^13.0.0
         version: 13.3.0
-      '@trustline-onboarder/sdk':
+      '@trustliner/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
     devDependencies:
@@ -35,7 +35,7 @@ importers:
       '@stellar/stellar-sdk':
         specifier: ^13.0.0
         version: 13.3.0
-      '@trustline-onboarder/sdk':
+      '@trustliner/sdk':
         specifier: workspace:*
         version: link:../sdk
     devDependencies:
@@ -70,7 +70,7 @@ importers:
       '@stellar/stellar-sdk':
         specifier: ^13.0.0
         version: 13.3.0
-      '@trustline-onboarder/sdk':
+      '@trustliner/sdk':
         specifier: workspace:*
         version: link:../sdk
       hono:

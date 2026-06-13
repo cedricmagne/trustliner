@@ -1,6 +1,6 @@
 # Contributing
 
-Trustline Onboarder is built in the open under Apache-2.0. Contributions are welcome.
+Trustliner is built in the open under Apache-2.0. Contributions are welcome.
 
 ## Development
 

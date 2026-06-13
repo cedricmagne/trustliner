@@ -3,7 +3,7 @@
 ```
 SEP: TBD
 Title: Trustline-Free Asset Onboarding
-Author: TODO (applicant)
+Author: Cédric Magne <cedric@smartt.dev>
 Track: Standard
 Status: Draft
 Created: 2026-06-08
