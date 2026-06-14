@@ -14,7 +14,7 @@ Cédric's years at Consensys — engineering on protocols underpinning MetaMask 
 
 ## Prior dev-focused work
 
-- **Trustliner** — this project; open-source under Apache-2.0: [github.com/cedricmagne/trustliner](https://github.com/cedricmagne/trustliner)
+- **Trustliner** — this project; open-source under Apache-2.0: [github.com/trustline-stellar/trustliner](https://github.com/trustline-stellar/trustliner)
 - **Consensys / MetaMask ecosystem** — contributor during tenure at Consensys, one of the primary Ethereum infrastructure companies; work covered smart contract tooling, DeFi protocol integrations, and developer-facing SDKs
 
 ## Stellar-specific experience
